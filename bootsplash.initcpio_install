@@ -1,0 +1,7 @@
+build() {
+	add_binary /usr/lib/firmware/bootsplash /usr/lib/firmware/bootsplash
+}
+
+help() {
+	echo "This hook includes a bootsplash in the initramfs image."
+}
