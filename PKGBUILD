@@ -1,6 +1,6 @@
 pkgname=bootsplash
 pkgver=0.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Bootsplash'
 arch=('i686' 'x86_64' 'aarch64')
 license=('GPL2')
@@ -21,7 +21,7 @@ md5sums=('4a251bae57a652bfa32361144815153c'
 
 build() {
     cd "${srcdir}"
-	  gcc $CFLAGS -o bootsplash-packer bootsplash-packer.c
+	  ${CC:-gcc} $CFLAGS -o bootsplash-packer bootsplash-packer.c
     sh ./bootsplash.sh
 }
 
